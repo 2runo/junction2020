@@ -22,7 +22,7 @@ def us_restaurant_menus_request(lon, lat, distance=1):
 
     headers = {
         'x-rapidapi-host': "us-restaurant-menus.p.rapidapi.com",
-        'x-rapidapi-key': "b385c0601dmsh4fb2f24b9b2d010p1ef59fjsna878b975f665"
+        'x-rapidapi-key': "{YOUR_API_KEY}"
         }
 
     response = requests.request("GET", url, headers=headers, params=querystring)
@@ -39,7 +39,7 @@ def recipe_search_and_diet_request(q):
 
     headers = {
         'x-rapidapi-host': "edamam-recipe-search.p.rapidapi.com",
-        'x-rapidapi-key': "b385c0601dmsh4fb2f24b9b2d010p1ef59fjsna878b975f665"
+        'x-rapidapi-key': "{YOUR_API_KEY}"
     }
 
     response = requests.request("GET", url, headers=headers, params=querystring)
