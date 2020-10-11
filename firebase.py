@@ -4,9 +4,9 @@ from firebase_admin import db
 
 
 # Firebase database 인증 및 앱 초기화
-cred = credentials.Certificate('credential/askkey-b0a35-firebase-adminsdk-ool7x-8a6a38d4a2.json')
+cred = credentials.Certificate('{CERTIFICATE_PATH}')
 firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://askkey-b0a35.firebaseio.com/'
+    'databaseURL': '{DATABASEURL}'
 })
 
 #ref = db.reference('menus')
